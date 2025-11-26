@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+
+@font-face {
+  font-family: "TitleFont";
+  src: url("/fonts/titleFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NavbarFont";
+  src: url("/fonts/navbarFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("/fonts/mainFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SubtitleFont";
+  src: url("/fonts/subTitleFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InterFont";
+  src: url("/fonts/interMedium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -------------------------
+   Root Font Variables
+-------------------------- */
+:root {
+  --font-title: "TitleFont", sans-serif;
+  --font-navbar: "NavbarFont", sans-serif;
+  --font-main: "MainFont", sans-serif;
+  --font-subtitle: "SubtitleFont", sans-serif;
+  --font-inter: "InterFont", sans-serif;
+}
+
+
+
+
+body,
+html {
+  overflow-x: hidden;
+  position: relative;
+ font-family: var(--font-main);
+}
+
+.font-navbar {
+  @apply font-sans; /* fallback */
+  font-family: var(--font-navbar);
+}
+
+.font-title {
+  @apply font-sans;
+  font-family: var(--font-title);
+}
+
+.font-subtitle {
+  @apply font-sans;
+  font-family: var(--font-subtitle);
+}
+
+.font-inter {
+  @apply font-sans;
+  font-family: var(--font-inter);
+}
