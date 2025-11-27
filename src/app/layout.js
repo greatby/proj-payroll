@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+        {children}
       </body>
     </html>
   );

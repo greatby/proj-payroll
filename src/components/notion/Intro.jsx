@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function IntroducingNotion3() {
   const SLIDES = [
@@ -39,27 +40,23 @@ export default function IntroducingNotion3() {
     // },
   ];
 
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   const current = SLIDES[active];
 
   const goPrev = () =>
     setActive((i) => (i - 1 + SLIDES.length) % SLIDES.length);
-  const goNext = () =>
-    setActive((i) => (i + 1) % SLIDES.length);
+  const goNext = () => setActive((i) => (i + 1) % SLIDES.length);
 
   return (
     <section className="bg-[#F5F3EF] py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-
         {/* HEADER */}
         <h2 className="text-4xl md:text-5xl font-bold mb-10 md:mb-12">
-          
-Precision-Engineered Payroll for the New Wage Era
+          Precision-Engineered Payroll for the New Wage Era
         </h2>
 
         {/* MAIN WRAPPER (NO GAP) */}
         <div className="flex flex-col md:flex-row w-full rounded-3xl overflow-hidden shadow-sm">
-
           {/* LEFT WHITE CARD */}
           <div className="bg-white w-full md:w-[32%] p-6 md:p-8">
             {/* <div className="flex items-center gap-2 text-sm mb-4">
@@ -71,11 +68,10 @@ Precision-Engineered Payroll for the New Wage Era
 
             <div className="flex items-start gap-3 mb-6">
               <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-snug">
-               
-Core Value Proposition
+                Core Value Proposition
               </p>
-              <span className="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full border border-black">
-                →
+              <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full border border-black">
+               <FaArrowRightLong />
               </span>
             </div>
 
@@ -118,13 +114,11 @@ Core Value Proposition
               min-h-[320px]
             "
             style={{
-              backgroundImage:
-                'url("/images/accordion-background.avif")',
+              backgroundImage: 'url("/images/accordion-background.avif")',
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-
             {/* VIDEO WRAPPER - RESPONSIVE */}
             <div
               className="

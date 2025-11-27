@@ -3,10 +3,16 @@ import Hero from "@/components/Hero";
 import SolutionsSection from "@/components/SolutionsSection";
 import StatsSection from "@/components/StatsSection";
 import React from "react";
-import {dataHero, statSectiondata}  from "@/utils/data"
+import { dataHero, statSectiondata } from "@/utils/data";
 import Script from "next/script";
 import WageCodeProblemSection from "@/components/WageCode";
 import ContactWorkforce from "@/components/Contact";
+import NotionNavbar from "@/components/notion/Navbar";
+import NotionHero from "@/components/notion/Hero";
+import NotionFooter from "@/components/notion/Footer";
+import AiUseCases from "@/components/notion/UseCases";
+import NotionIntro from "@/components/notion/Intro"
+import BentoCards from "@/components/notion/BentoCards";
 export const metadata = {
   title: "Payroll Services Built for Compliance, Precision & Scalability",
   description:
@@ -24,23 +30,22 @@ export const metadata = {
   },
 };
 
-
 const LandingPage = () => {
   return (
     <>
-   <Script
+      <Script
         id="organization-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Your Brand Name",
-            "url": "https://www.yourdomain.com/",
-            "logo": "https://www.yourdomain.com/logo.png",
-            "description":
+            name: "Your Brand Name",
+            url: "https://www.yourdomain.com/",
+            logo: "https://www.yourdomain.com/logo.png",
+            description:
               "Expert-managed payroll services including salary structuring, compliance filings, PF, ESI, TDS management, and fully compliant payroll operations.",
-            "sameAs": [
+            sameAs: [
               "https://www.facebook.com/yourbrand",
               "https://www.linkedin.com/company/yourbrand",
               "https://www.instagram.com/yourbrand",
@@ -49,12 +54,20 @@ const LandingPage = () => {
         }}
       />
 
-      <Hero data={dataHero}/>
+      {/* <Hero data={dataHero}/>
       
-      {/* <Features /> */}
+      
       <SolutionsSection />
       <StatsSection data={statSectiondata}/>
-      <ContactWorkforce />
+      <ContactWorkforce /> */}
+      <div className="font-inter">
+        <NotionNavbar />
+        <NotionHero data={dataHero} />
+        <AiUseCases />
+        <NotionIntro />
+        <BentoCards />
+        <NotionFooter />
+      </div>
     </>
   );
 };
