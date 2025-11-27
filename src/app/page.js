@@ -65,7 +65,7 @@ const LandingPage = () => {
         <NotionHero data={dataHero} />
         <AiUseCases />
         <NotionIntro />
-        <BentoCards />
+        {/* <BentoCards /> */}
         <NotionFooter />
       </div>
     </>
