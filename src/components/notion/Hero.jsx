@@ -1,11 +1,10 @@
 "use client";
 
-export default function NotionHero({data}) {
+export default function NotionHero({ data }) {
   return (
     <section className="relative w-full pt-32 pb-20 bg-white">
-
       {/* MASKED VIDEO ROW */}
-      <div className="flex justify-center mb-12">
+      {/* <div className="flex justify-center mb-12">
         <div
           className="overflow-hidden"
           style={{
@@ -26,6 +25,13 @@ export default function NotionHero({data}) {
             poster="/front-static/pages/home/fall/hero/homepage-hero-animation-ff.png"
           />
         </div>
+      </div> */}
+      <div className="flex justify-center mb-6">
+        <img
+          src="/images/abstract.png"
+          alt="Hero graphic"
+          className="w-full h-auto max-w-full"
+        />
       </div>
 
       {/* Heading */}
