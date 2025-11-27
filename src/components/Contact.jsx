@@ -12,12 +12,12 @@ const ContactWorkforce = () => {
         {/* Heading for Desktop */}
         <h5 className="text-[40px] font-title hidden max-w-[750px] text-center text-white sm:block">
           Don’t Let Compliance Uncertainty Slow You Down.
-          Partner with India’s most precise payroll provider.
+          Partner with India’s / UAE's most precise payroll provider.
         </h5>
 
         {/* Heading for Mobile */}
         <p className="heading3 font-title p-5 text-center text-white sm:hidden">
-          Don’t Let Compliance Uncertainty Slow You Down. Partner with India’s most precise payroll provider.
+          Don’t Let Compliance Uncertainty Slow You Down. Partner with India’s/UAE's most precise payroll provider.
         </p>
 
         {/* Subheading */}

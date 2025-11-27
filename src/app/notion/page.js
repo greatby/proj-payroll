@@ -8,13 +8,13 @@ import React from "react";
 
 const page = () => {
   return (
-    <React.Fragment>
+    <div className="font-inter">
       <NotionNavbar />
       <NotionHero data={dataHero}/>
       <AiUseCases />
       <NotionIntro />
       <NotionFooter />
-    </React.Fragment>
+    </div>
   );
 };
 
