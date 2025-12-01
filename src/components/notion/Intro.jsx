@@ -9,35 +9,27 @@ export default function IntroducingNotion3() {
     {
       title: "Smart Wage Structuring",
       desc: "We don’t just process salaries — we model them. Our certified payroll experts create a compliant wage structure that ensures accurate PF and Gratuity calculations while enhancing employee take-home pay through intelligent restructuring.",
-      video:
-        "https://videos.ctfassets.net/spoqsaf9291f/4sGOnBGgPUbz0AGPlK3hzu/e9c967ac116ab4e02a861e5a32968e6f/Slide_A_1584x1080_isolated_final_compressed_500k.mp4",
+      image:
+        "/images/smart-wage-removebg-preview.png",
       poster:
         "https://images.ctfassets.net/spoqsaf9291f/5YQCShRSSTzBGeNEJ4rq9r/7c7716af3473c233a302f9d4319aca0f/Slide_A_1584x1080_isolated_final_compressed_500k_first_frame.jpg",
     },
     {
       title: "Flawless Statutory Compliance",
       desc: "Your entire statutory workflow is handled with precision. From PF and ESI to monthly TDS filings, we ensure every return is submitted accurately and on time, eliminating penalties and compliance risks for your organization.",
-      video:
-        "https://videos.ctfassets.net/spoqsaf9291f/7h5maXW4nan2tJEtlTGz83/d3bc1bff536e254bfd47c8904937e63d/Slide_B_1584x1080_isolated_final_compressed_1100k.mp4",
+      image:
+        "/images/flawless-removebg-preview.png",
       poster:
         "https://images.ctfassets.net/spoqsaf9291f/2Au7fvWafMpLZ9AEw3bC9j/63d0a6664f66b595cf8b01ae32254120/Slide_B_1584x1080_isolated_final_compressed_1100k_first_frame.jpg",
     },
     {
       title: "Optimized Take-Home Salary",
       desc: "Searches all your pages, messages, files, and the web to surface exactly what you need.",
-      video:
-        "https://videos.ctfassets.net/spoqsaf9291f/6kzWb9Yq0jKOfKvPiGzrhf/68e16d74ffd70fa761641bd04feef512/Slide_C_1584x1080_isolated_final_compressed_1100k.mp4",
+      image:
+        "/images/smart-wage-removebg-preview.png",
       poster:
         "https://images.ctfassets.net/spoqsaf9291f/4qtBbCyYnRl56l1WV1TNEZ/c648f4c81dc75f7bc61dd521983ac3a7/Slide_C_1584x1080_isolated_final_compressed_1100k_first_frame.jpg",
     },
-    // {
-    //   title: "Personalized to you",
-    //   desc: "Your Agent learns how you work. You control everything from how it behaves to how it looks.",
-    //   video:
-    //     "https://videos.ctfassets.net/spoqsaf9291f/2Ofwr4YxZHrV58vPRAM0rJ/961cfda420d4a5c20aeb38f9d0477af4/Slide_D_1584x1080_isolated_final_compressed_500k.mp4",
-    //   poster:
-    //     "https://images.ctfassets.net/spoqsaf9291f/58tNscjSP1mgkKTFkXwfg2/e33432b1e2fea7ea177f7e3fa002abae/Slide_D_1584x1080_isolated_final_compressed_500k_first_frame.jpg",
-    // },
   ];
 
   const [active, setActive] = useState(0);
@@ -59,19 +51,12 @@ export default function IntroducingNotion3() {
         <div className="flex flex-col md:flex-row w-full rounded-3xl overflow-hidden shadow-sm">
           {/* LEFT WHITE CARD */}
           <div className="bg-white w-full md:w-[32%] p-6 md:p-8">
-            {/* <div className="flex items-center gap-2 text-sm mb-4">
-              <span className="font-medium">Notion Agent</span>
-              <span className="px-2 py-[2px] text-xs rounded-full bg-gray-100">
-                New
-              </span>
-            </div> */}
-
             <div className="flex items-start gap-3 mb-6">
               <p className="text-lg sm:text-xl md:text-2xl font-semibold leading-snug">
                 Core Value Proposition
               </p>
               <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full border border-black">
-               <FaArrowRightLong />
+                <FaArrowRightLong />
               </span>
             </div>
 
@@ -111,7 +96,7 @@ export default function IntroducingNotion3() {
               relative 
               w-full md:w-[68%] 
               flex justify-center items-center
-              min-h-[320px]
+              min-h-80
             "
             style={{
               backgroundImage: 'url("/images/accordion-background.avif")',
@@ -128,19 +113,14 @@ export default function IntroducingNotion3() {
                 md:absolute md:w-[95%] md:h-[93%] md:top-[25px] md:right-0
               "
             >
-              <video
-                key={current.video}
-                src={current.video}
-                poster={current.poster}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
+              <img
+                key={current.image}
+                src={current.image}
+                alt="Slide"
                 className="
-                  w-full h-auto object-contain
-                  rounded-none md:rounded-tl-xl
-                "
+        w-full h-auto object-contain
+        rounded-none md:rounded-tl-xl
+      "
               />
 
               {/* LEFT ARROW */}

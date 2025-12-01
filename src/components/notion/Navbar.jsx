@@ -11,7 +11,7 @@ export default function NotionNavbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="w-full border-b border-[#0000001a] bg-white fixed top-0 left-0 z-[9999]">
+      <nav className="w-full border-b border-[#0000001a] bg-white fixed top-0 left-0 z-9999">
         <div className="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">
           {/* LEFT */}
           <div className="flex items-center font-semibold">
@@ -97,7 +97,7 @@ export default function NotionNavbar() {
             fixed left-0 top-16 
             w-screen 
             bg-white border-t shadow-2xl 
-            z-[99999] 
+            z-99999 
             py-12
           "
         >
@@ -154,7 +154,7 @@ export default function NotionNavbar() {
             fixed left-0 top-16 
             w-screen 
             bg-white border-t shadow-2xl 
-            z-[99999] 
+            z-99999 
             py-12
           "
         >
@@ -253,7 +253,7 @@ function DropdownCol({ heading, items }) {
             <div className="flex items-center gap-2">
               <h4 className="text-lg font-semibold">{item.title}</h4>
               {item.badge && (
-                <span className="px-2 py-[2px] text-xs bg-gray-200 rounded-full">
+                <span className="px-2 py-0.5 text-xs bg-gray-200 rounded-full">
                   {item.badge}
                 </span>
               )}

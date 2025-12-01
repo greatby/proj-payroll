@@ -7,7 +7,7 @@ export default function AboutPage() {
       <section className="relative h-[90vh] overflow-hidden bg-[#001A13] text-white flex items-center justify-center px-6">
         {/* Background Gradient Wave */}
         <div
-          className="absolute inset-0 bg-no-repeat bg-right-top opacity-70"
+          className="absolute inset-0 bg-no-repeat bg-top-right opacity-70"
           style={{
             backgroundImage:
               "url('/images/about_hero_wave_gradient.svg')",
@@ -33,7 +33,7 @@ export default function AboutPage() {
       {/* -------------------------------------- */}
       <section className="max-w-5xl mx-auto py-24 px-6 flex flex-col items-center gap-12">
         <div
-          className="absolute inset-0 bg-no-repeat bg-right-top opacity-70 pointer-events-none"
+          className="absolute inset-0 bg-no-repeat bg-top-right opacity-70 pointer-events-none"
           style={{
             backgroundImage:
               "url('/images/about_hero_wave_outline.svg')",

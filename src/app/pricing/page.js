@@ -8,7 +8,7 @@ export default function PayrollPricing() {
       <section className="relative flex flex-col items-center justify-center text-center pt-32 pb-20 px-6 overflow-hidden">
         
         {/* Background Wave */}
-        <div className="pointer-events-none absolute left-[-80rem] top-40 h-[2200px] w-[4300px] rotate-[55deg] opacity-80">
+        <div className="pointer-events-none absolute -left-320 top-40 h-[2200px] w-[4300px] rotate-55 opacity-80">
           <img
             src="/images/pricing_wave.svg"
             className="object-cover w-full h-full"
